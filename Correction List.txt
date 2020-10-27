@@ -1,0 +1,15 @@
+Correction List
+
+Major Correction:
+- Can't make the checkboxes even (Contact TreeDegree)
+Can't make the distance between input and label equal (Contact Treedegree)
+
+Minor Correction:
+- Make the form fitting phone patter work
+
+Extra:
+- With Select> Other STates - Add a text box
+
+Questions: 
+Does a select element require a muliuple attribute  with my 
+How to make the numbers fit into a telephone pattern
