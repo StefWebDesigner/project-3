@@ -23,6 +23,17 @@ p {
  
 }
 
+.intro-header {
+
+  text-align: center;
+}
+
+.form-paragraph {
+
+  text-align: left;
+}
+
+
 h1,
 h2 {
 text-shadow: -1px 1px 0 , 
@@ -141,7 +152,6 @@ font-size: 20px;
 color: navy;
 }
 
-
 .checkbox-label {
     color: grey;
     font-size: 20px;
@@ -152,7 +162,6 @@ color: navy;
     color: grey;
     margin: 0;
 }
-
 
 
 form h3 {
@@ -173,15 +182,14 @@ padding: 10px;
 font-size: 20px;
 margin-bottom: 10px;
 color: white;
-}
+cursor: pointer;
 
+}
 
 .state-menu {
     color: white;
     font-size: 16px;
-
 } 
-
 
 
 textarea {
@@ -193,14 +201,14 @@ textarea {
     border-radius: 10px;
 }
 
-
 form button {
 width: 80%;
 height: 50px;
 border-radius: 10px;
 background-color: cyan;
-font-size: 18px;
+font-size: 25px;
 cursor: pointer;
+margin: auto;
 }
 
 
@@ -223,12 +231,8 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: left;
+    width: 100%; /* Feedback */
   }
-
-
-
-
-
 
 
 /* ----- For Newsletter Section ---- */
@@ -248,10 +252,9 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: left;
+    width: 100%; /* Feedback */
+
   }
-
-
-
 
 /* Use peusdo classes to have it set right next
 to the label */
@@ -265,7 +268,7 @@ to the label */
 
 input:focus {
     color: darkblue;
-    background-color: lightgrey;
+    background-color: silver;
 }
 
 /* the Input's placeholders */
@@ -275,7 +278,6 @@ input:focus {
     opacity: .90;
     font-size: 16px;
     font-style: italic;
-
 }
 
 form button {
@@ -285,9 +287,14 @@ form button {
     text-align: center;
     }
     
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: 20px;
+  }
+  
 
 
-
+/* =============================================== */
 
 
 
@@ -302,20 +309,14 @@ form button {
 /*====== Base Form Element =====*/
 
 p {
-
    white-space: normal; 
 }
 
 /* Tyrin to make equal space inbetween teh label and imput */
 input,
 select {
-
-width: 85%;
-flex-basis: 50%;
-padding: 15px;
-
+padding: 20px;
 }
-
 
 /* ======= Classes ====== */
 
@@ -332,23 +333,50 @@ padding: 15px;
 label,
 input {
     display: flex;
-
 }
-
 
 
 .row-main {
-
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-
 }
 
+/* I need to set the label to a cerin flex basis */
+/* I need to set the input to antoher allocated space */
 
+.row-main[input] {
+    width:75%;
+    flex-basis: 50%;
+}
 
+.row-main[label] {
+    max-width: 20%;
+    }
 
+    select, input{
+      width: 70%;
+      box-sizing:border-box;
+      justify-content: right;
+    }
 
+   label,
+    select,
+    input {
+      justify-content: space-between;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+    flex-basis: 80%; /*This regulates the distance between the
+    input and label*/
+  }
+
+  label {
+    flex-basis: 20%;
+  }
 
 
 
