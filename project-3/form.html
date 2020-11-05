@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Code Review is a organization that goes over the latest coding news and inspires coders all around the world">
+    <title>The Code Review | Signup for our newsletters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <!-- Div for Main title & Logo -->
+        <div>
+            <h1> THE CODE REVIEW </h1>
+            <img class="logo" src="https://image.flaticon.com/icons/png/512/38/38787.png" alt="logo of The Code Review">
+        </div>
+
+        <!-- Nav for the navigation menu -->
+        <nav class="main-nav">
+            <ul class="">
+                <li><a href="" target="_blank"> Home</a></li>
+                <li><a href="" target="_blank"> About Us </a></li>
+                <li><a href="" target="_blank"> Privacy </a></li>
+                <li><a href="" target="_blank"> Sign Up Today</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+    
+        <div> 
+            <h3 class="intro-header"> Sign up for our newsletter </h3>
+            <p> Get the latest news on how your code is doing right in your inbox </p>
+                <div class="div-line-black"> </div>
+                <div class="div-line-white"> </div>
+                <div class="div-line-grey"> </div>
+        </div>
+
+        <form>
+
+            <fieldset class="main-flexbox"> 
+                <!-- Remeber to include errors/required messages -->
+                <!-- Add hover effect to it -->
+                <legend><u> Contact Information </u> </legend> 
+                    <!-- Include aris placeholders/make it accessoinble 
+                    /For disabiliti3s -->
+
+            <div class="column-main">
+                    <!-- Full Name Label -->
+
+                <div class="row-main">
+                    <label for="name">Full Name </label> 
+                    <!-- <p class="hint"> * - required field *</p> -->
+                    <input type="text" id="name" name="user-name" placeholder="Required" required>
+                </div>
+
+                <div class="row-main">
+                    <!-- Email Adress -->
+                    <label for="email"> Email </label>
+                    <!-- <p class="hint"> * - required field * </p> -->
+                    <input type="email" id="email" name="user-email" placeholder="Required" required>
+                </div>
+                    <!-- Phone Number -->
+                    <!-- Have it automatically shape it into from -->
+                    <!-- Provide an alterative because of accesibility reasons -->
+                   
+                <div class="row-main">
+                    <label for="phone"> Phone Number </label>
+                    <!-- <p class="hint"> * - required field * </p> -->
+                    <input type="tel" id="phone" name="user-phone" placeholder="123-45-678" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+                    <!-- Street Adress -->
+                    <!-- Use optgroup labels to better group this -->
+                    <!-- Make it automatically find the adress based on the zipcode -->
+
+                <div class="row-main">
+                    <label for="adress-2"> Street Adress </label>
+                    <input type="text" id="adress-2" name="user-adress-2" placeholder="Street Address">
+                </div>
+
+                <div class="row-main">
+                    <label for="adress-3"> City </label>
+                    <input type="text" id="adress-3" name="user-adress-3"  placeholder="City">
+                </div>
+
+                
+                <div class="row-main">
+                    <label for="adress-4"> State </label>
+                    <select class="state-menu" id="adress-4" name="user-adress-4" required>
+                            <option class="state-menu" value="0"> Choose a state </option>
+                            <option class="state-menu" value="1"> Georiga </option>
+                            <option class="state-menu" value="2"> California </option>
+                            <option class="state-menu" value="3"> Miami </option>
+                            <option class="state-menu" value="4"> Other States </option>                           
+                     </select>
+                </div>
+
+                <div class="row-main">
+                    <label for="adress-1"> Zip Code/Post Code </label>
+                    <!-- <p class="hint"> * - required field *</p> -->
+                    <input class="input-zipcode" type="text" id="adress-1" name="user-adress-1" placeholder="Required" required>
+                </div>
+
+            </div>
+            </fieldset>
+
+            <div> 
+                <div class="div-line-black"> </div>
+                <div class="div-line-white"> </div>
+                <div class="div-line-grey"> </div>
+            </div>
+
+            <fieldset>
+                <legend> <u> Newsletter </u></legend> 
+
+                <h3> Newsletters Of Interest </h3>
+
+                <p class="form-paragraph">Select the newsletter you would like to recieve
+                </p>
+
+                <!-- Label Subscription Option -->
+                <div class="newletter-flexbox">
+                    <div class="column-news">
+
+                        <!-- HTML Option -->
+                    <div class="row-news">   
+                        <input class="checkbox-input"  type="checkbox" id="newsletter-html" value="newsletter-html" name="user-newsletter">
+                        <label class="checkbox-label" for="newsletter-html"> HTML News </label>
+                    </div>  
+                        <!-- Css Option -->
+                    <div class="row-news">   
+                        <input class="checkbox-input" type="checkbox" id="newsletter-css" value="newletter-css" name="user-newsletter">
+                        <label class="checkbox-label" for="newsletter-css"> CSS News </label>
+                    </div>  
+
+                        <!-- Javascript Option -->
+                    <div class="row-news">   
+                        <input class="checkbox-input" type="checkbox" id="newsletter-java" value="newletter-java" name="user-newsletter">
+                        <label class="checkbox-label" for="newsletter-java"> Javascript News </label>
+                    </div>  
+ 
+                    </div>
+                </div>
+
+                <h3> Newsletter Format </h3>
+
+            
+                <div class="newletter-flexbox">
+                    <div class="column-news">
+
+
+                    <!-- HTML Format -->
+                <div class="row-news">   
+                    <input  class="checkbox-input" type="radio" id="html-format" name="user-format">
+                    <label class="checkbox-label" for="html-format"> HTML </label>
+                </div>  
+
+                    <!-- Plain Text -->
+                <div class="row-news">   
+
+                    <input  class="checkbox-input" type="radio" id="plain-format" name="user-format">
+                    <label class="checkbox-label" for="plain-format"> Plain Format </label> 
+                </div>  
+ 
+            </div>
+        </div>
+
+                    <!-- Other topics  -->
+                    <label for="other-topics"> Other topics you'd like to hear about </label>
+                    <textarea id="other-topics" name="user-other-topics"></textarea>
+                </fieldset>
+
+                <button type="submit"> Sign up </button>
+    </form>
+        
+
+    
+    </main>
+
+    <footer>
+        <p> Copyright The Code Review </p>
+    </footer>
+
+
+
+</body>
+
+</html>
+

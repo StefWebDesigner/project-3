@@ -1,0 +1,423 @@
+ /* ==== Style CSS For Form.html ==== */
+
+/* ==== Universal Sections ==== */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    }
+
+/* ==== Base Sections ==== */
+
+/* ---- Base Elements ---- */
+
+/* Add my special The Stefan Talk Show Font */
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+p {
+
+    white-space: pre;
+ 
+}
+
+.intro-header {
+
+  text-align: center;
+}
+
+.form-paragraph {
+
+  text-align: left;
+}
+
+
+h1,
+h2 {
+text-shadow: -1px 1px 0 , 
+                      1px 1px 0  black, 
+                    1px -1px 0 blue, 
+                    -1px -1px 0  white ; 
+}
+/* ==== Flexbox ==== */
+
+/* ---- Flex Declarations ---- */
+
+.main-header,
+.main-nav,
+.logo {
+    display: flex;
+}
+
+/* ==== Header ==== */
+
+/*---- Header Container ----  */
+
+
+.main-header,
+.main-nav,
+.logo {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+background-color: rgb(4, 4, 20);
+color: white;
+}
+
+.main-nav {
+flex-wrap: wrap;
+flex-direction: row;
+} 
+
+
+/* ---- Header Elements ----  */
+
+.logo {
+border: 1px solid white;
+border-radius: 50%;
+background-color: white;
+width: 100px;
+height: auto;
+margin: auto;
+}
+
+.main-nav li,
+.main-nav a {
+text-decoration: none;
+list-style: none;
+color: white;   
+}
+
+/* ==== Main ==== */
+
+/* ---- Main Containers ---- */
+main {
+width: 88%;
+margin: auto;
+}
+
+
+/* ---- Main Elements ---- */
+
+/* Find an easier way to make these lines */
+.div-line-black {
+background-color: rgb(4, 4, 20);
+width: 98%;
+height: 5px;
+}
+
+.div-line-white {
+background-color:white;
+width: 98%;
+height: 5px;
+}
+    
+.div-line-grey {
+background-color: grey;
+width: 98%;
+height: 5px;
+}    
+
+/* ===== Form Section ===== */
+
+/* ---- Form Elements ---- */
+
+
+/* Add hover effect to it */
+/* Make life easy - combind input and text area
+elements into two */
+
+
+
+form legend {
+text-shadow: -1px 1px 0 , 
+                      1px 1px 0  black, 
+                    1px -1px 0 blue, 
+                    -1px -1px 0  white ; 
+font-size: 25px;
+}
+
+fieldset {
+border-style: none;
+}
+
+label {
+color: grey;
+display: block;
+font-size: 20px;
+color: navy;
+}
+
+.checkbox-label {
+    color: grey;
+    font-size: 20px;
+    color: navy;
+}
+
+.checkbox-input  {
+    color: grey;
+    margin: 0;
+}
+
+.row-main .input-zipcode {
+  width: 48.5%;
+  justify-content: left;
+  margin: 0;
+}
+
+
+form h3 {
+text-align: left;
+font-weight: bolder;
+color:navy
+}
+
+input,
+select {
+margin: auto;
+background-color: slategray;
+opacity: .5;
+border-style: none;
+border-radius: 10px;
+width: 97%;
+padding: 10px;
+font-size: 20px;
+margin-bottom: 10px;
+color: white;
+cursor: pointer;
+}
+
+
+.state-menu {
+    color: white;
+    font-size: 16px;
+} 
+
+
+textarea {
+    height: 100px;
+    width: 98%;
+    background-color: grey;
+    opacity: .5;
+    border-style: none;
+    border-radius: 10px;
+}
+
+form button {
+  display: flex;
+width: 90%;
+height: 50px;
+border-radius: 10px;
+background-color: darkblue;
+font-size: 25px;
+cursor: pointer;
+margin: 0 auto;
+text-align: center;
+color: white;
+justify-content: center;
+}
+
+form button:hover {
+  opacity: .8;
+  transition-duration: 500ms;
+  transform: scale(1.1);
+
+}
+
+
+/* ======== Flex Container/Classes ======== */
+
+
+/* ---- For Main form section */
+.main-flexbox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .column-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%; /* Feedback */
+  }
+
+
+/* ----- For Newsletter Section ---- */
+
+.newletter-flexbox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row-news {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .column-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%; /* Feedback */
+
+  }
+
+/* Use peusdo classes to have it set right next
+to the label */
+.hint {
+    font-weight: 300;
+    color: rgb(82, 79, 79);
+    font-size: 16px;
+    display: inline;
+} 
+
+
+input:focus,
+.state-menu:focus {
+    color: BLACK;
+    background-color: lightblue;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+}
+
+/* the Input's placeholders */
+::placeholder { 
+    text-align: right;
+    color: black;
+    opacity: .90;
+    font-size: 16px;
+    font-style: italic;
+}
+
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: 20px;
+  }
+  
+
+
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+
+
+
+
+/* ======== Media Queries ================= */
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+/*====== Base Form Element =====*/
+
+p {
+   white-space: normal; 
+}
+
+/* Tyrin to make equal space inbetween teh label and imput */
+input,
+select {
+padding: 20px;
+}
+
+/* ======= Classes ====== */
+
+.main-header {
+
+    max-width: 95%;
+    margin: auto;
+}
+
+/* ========Flex Contianer ===== */
+
+/* --- Main Flex Contianer ---- */
+
+label,
+input {
+    display: flex;
+}
+
+
+.row-main {
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+/* I need to set the label to a cerin flex basis */
+/* I need to set the input to antoher allocated space */
+
+.row-main[input] {
+    width:75%;
+    flex-basis: 50%;
+}
+
+.row-main[label] {
+    max-width: 20%;
+    }
+
+    select, input{
+      width: 70%;
+      box-sizing:border-box;
+      justify-content: right;
+    }
+
+   label,
+    select,
+    input {
+      justify-content: space-between;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+    flex-basis: 80%; /*This regulates the distance between the
+    input and label*/
+  }
+
+  label {
+    flex-basis: 20%;
+  }
+
+
+
+
+}

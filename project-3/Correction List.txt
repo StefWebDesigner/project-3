@@ -1,0 +1,18 @@
+Correction List
+
+Major Correction:
+(768px)
+- Can't change the zipcode input bar to half lenghts (Ask for help-I have no clue) 
+    - [class$="test"] {background: yellow;}
+    - The row-main container must be stopping
+    - the justification must clash with something
+
+(Mobile)
+
+
+(Other)
+- Make sure to have zero validatiion errors
+- Keep getting an HTML Validator error:
+        The first child option element of a select element with a required attribute, and without a multiple attribute, and without a size attribute whose value is greater than 1, must have either an empty value attribute, or must have no text content. Consider either adding a placeholder option label, or adding a size attribute with a value equal to the number of option elements.
+
+                From line 100, column 29; to line 100, column 65
