@@ -393,6 +393,15 @@ align-items: center;
     max-width: 20%;
     }
 
+    .row-main:last-of-type {
+      justify-content: flex-start;
+    }
+    .row-main:last-of-type input {
+      max-width: 25%;
+    }
+
+
+
     select, input{
       width: 70%;
       box-sizing:border-box;
